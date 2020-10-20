@@ -46,7 +46,7 @@ theme_set(theme_minimal())
 garden_harvest <- read_sheet("https://docs.google.com/spreadsheets/d/1DekSazCzKqPS2jnGhKue7tLxRU3GVL1oxi-4bEM5IWw/edit?usp=sharing") %>% 
   mutate(date = ymd(date)
          
-covid19 <- read_csv("https://raw.githubusercontent.com/nytimes/covid-19-data/master/us-states.csv")
+ covid19 <- read_csv("https://raw.githubusercontent.com/nytimes/covid-19-data/master/us-states.csv")
 
 ```
 
@@ -68,9 +68,7 @@ covid_weekly <- covid19 %>%
   filter(new_cases_weekly >= 20)
 ```
   
-```{r, eval = FALSE}
-[Link](https://cwoerman.shinyapps.io/ShinyApp/?_ga=2.104064834.372942890.1602641142-1768631944.1602641142)
-```
+
 
 ## Warm-up exercises from tutorial
 
